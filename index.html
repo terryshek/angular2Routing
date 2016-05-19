@@ -4,6 +4,9 @@
     <base href="/">
     <title>Angular 2 Boilerplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <!-- Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
@@ -17,10 +20,22 @@
     <script src="node_modules/angular2/bundles/http.js"></script>
 
 
-    <link rel="stylesheet" href="src/css/app.css">
+    <!--<link rel="stylesheet" href="src/css/app.css">-->
+    <style>
+        .completed{
+            background: #ff9634;
+        }
+        .start{
+            background: #9bffd0;
+        }
+    </style>
 </head>
+<base href="/">
 <body>
+<div class="completed">completed</div>
+<div class="start">start</div>
 <my-app>Loading...</my-app>
+
 
 <script>
     System.config({
